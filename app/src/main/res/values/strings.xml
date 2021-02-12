@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="uLavalActivity">UlavalActivity</string>
+    <string name="monProfilActivity">Profil Description</string>
+</resources>

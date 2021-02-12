@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/monNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rochdi Elfakrani"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/siteWebExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Site Web (ext)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/monNom"
+        app:layout_constraintBottom_toTopOf="@+id/siteWebWv"/>
+
+    <Button
+        android:id="@+id/siteWebWv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Site Web (wv)"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siteWebExt"
+        app:layout_constraintBottom_toTopOf="@+id/uLaval"/>
+
+    <Button
+        android:id="@+id/uLaval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ULaval"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siteWebWv"
+        app:layout_constraintBottom_toTopOf="@id/monProfil"/>
+
+    <Button
+        android:id="@+id/monProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon Profil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uLaval"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
